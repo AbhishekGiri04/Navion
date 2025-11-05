@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom colors */
+:root {
+  --nova-blue: #3b82f6;
+  --nova-purple: #8b5cf6;
+  --nova-dark: #1f2937;
+  --nova-gray: #6b7280;
+  --nova-light: #f8fafc;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nova-light);
+    color: var(--nova-dark);
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+  
+  #root {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@layer components {
+  .nova-button {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-nova-blue/50;
+  }
+  
+  .nova-button-primary {
+    @apply nova-button bg-nova-blue text-white hover:bg-blue-600 active:bg-blue-700;
+  }
+  
+  .nova-button-secondary {
+    @apply nova-button bg-white text-nova-dark border border-gray-300 hover:bg-gray-50 active:bg-gray-100;
+  }
+  
+  .nova-input {
+    @apply px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-nova-blue/50 focus:border-nova-blue transition-colors;
+  }
+  
+  .nova-card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-4;
+  }
+  
+  .nova-glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  .text-nova-blue { color: var(--nova-blue); }
+  .text-nova-purple { color: var(--nova-purple); }
+  .text-nova-dark { color: var(--nova-dark); }
+  .text-nova-gray { color: var(--nova-gray); }
+  .bg-nova-blue { background-color: var(--nova-blue); }
+  .bg-nova-purple { background-color: var(--nova-purple); }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .nova-gradient {
+    background: linear-gradient(135deg, #1a73e8 0%, #34a853 100%);
+  }
+  
+  .nova-gradient-purple {
+    background: linear-gradient(135deg, #9c27b0 0%, #1a73e8 100%);
+  }
+}
