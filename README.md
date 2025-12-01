@@ -5,6 +5,12 @@
 </p>
 
 <p align="center">
+  <a href="https://navionx.netlify.app" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Navion-00C7B7?style=for-the-badge" alt="Live Demo"/>
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
   <img src="https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white"/>
@@ -103,6 +109,11 @@ Navion is a modern web application built to revolutionize navigation with:
 
 ```
 Navion/
+├── 📂 docs/                        # 📸 Screenshots & Images
+│   ├── 📄 Home_Page.png
+│   ├── 📄 Loading_Page.png
+│   ├── 📄 Navigation.png
+│   └── 📄 Weather_Page.png
 ├── 📂 src/
 │   ├── 📂 features/                # 🎯 Feature-based modules
 │   │   ├── 📂 assistant/           # 🎤 AI Voice Assistant
@@ -114,32 +125,34 @@ Navion/
 │   │   └── 📂 social-network/      # 👥 Social Features
 │   │       └── 📄 SocialFeed.jsx
 │   ├── 📂 shared/                  # 🔄 Shared Resources
-│   │   ├── 📂 ui/                  # 🧩 Reusable UI Components
-│   │   │   ├── 📄 LoadingSpinner.jsx
-│   │   │   ├── 📄 LocationSearch.jsx
-│   │   │   ├── 📄 NavigationControls.jsx
-│   │   │   ├── 📄 ThemeSelector.jsx
-│   │   │   ├── 📄 TrafficOverlay.jsx
-│   │   │   ├── 📄 RouteRenderer.jsx
-│   │   │   └── 📄 WeatherPanel.jsx
 │   │   ├── 📂 composables/         # 🪝 React Hooks
 │   │   │   └── 📄 useLocation.js
 │   │   ├── 📂 services/            # ⚙️ Business Logic
 │   │   │   ├── 📄 pathfinding.service.js
 │   │   │   └── 📄 routing.service.js
-│   │   └── 📂 styles/              # 🎨 CSS Files
-│   │       ├── 📄 index.css
-│   │       └── 📄 leaflet-custom.css
+│   │   ├── 📂 styles/              # 🎨 CSS Files
+│   │   │   ├── 📄 index.css
+│   │   │   └── 📄 leaflet-custom.css
+│   │   └── 📂 ui/                  # 🧩 Reusable UI Components
+│   │       ├── 📄 LoadingSpinner.jsx
+│   │       ├── 📄 LocationSearch.jsx
+│   │       ├── 📄 NavigationControls.jsx
+│   │       ├── 📄 RouteRenderer.jsx
+│   │       ├── 📄 ThemeSelector.jsx
+│   │       ├── 📄 TrafficOverlay.jsx
+│   │       └── 📄 WeatherPanel.jsx
 │   ├── 📄 App.jsx                  # 🏠 Main Application
 │   └── 📄 main.jsx                 # 🚀 Entry Point
-├── 📄 index.html                   # 📄 HTML Template
-├── 📄 package.json                 # 📦 Dependencies
-├── 📄 vite.config.js               # ⚡ Vite Configuration
-├── 📄 tailwind.config.js           # 🎨 Tailwind Configuration
+├── 📄 _redirects                   # 🔀 Netlify Redirects
 ├── 📄 .env.example                 # 🔐 Environment Variables
 ├── 📄 .gitignore                   # 🚫 Git Ignore Rules
-└── 📄 README.md                    # 📖 Documentation
-
+├── 📄 index.html                   # 📄 HTML Template
+├── 📄 netlify.toml                 # 🌐 Netlify Configuration
+├── 📄 package.json                 # 📦 Dependencies
+├── 📄 postcss.config.js            # 🎨 PostCSS Configuration
+├── 📄 README.md                    # 📖 Documentation
+├── 📄 tailwind.config.js           # 🎨 Tailwind Configuration
+└── 📄 vite.config.js               # ⚡ Vite Configuration
 ```
 <br>
 
