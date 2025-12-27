@@ -184,8 +184,8 @@ Navion/
 1. Clone and install:
 
    ```bash
-   git clone https://github.com/abhishekgiri04/Navion-Smart_Navigation_Platform.git
-   cd navion
+   git clone https://github.com/AbhishekGiri04/Navion.git
+   cd Navion
    npm install
    ```
 
