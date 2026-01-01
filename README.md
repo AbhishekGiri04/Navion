@@ -143,9 +143,13 @@ Navion/
 │   │       └── 📄 WeatherPanel.jsx
 │   ├── 📄 App.jsx                  # 🏠 Main Application
 │   └── 📄 main.jsx                 # 🚀 Entry Point
-├── 📄 .env.example                 # 🔐 Environment Variables
+├── 📄 .env                         # 🔐 Environment Variables (Local)
+├── 📄 .env.example                 # 🔐 Environment Variables Template
 ├── 📄 .gitignore                   # 🚫 Git Ignore Rules
+├── 📄 .npmrc                       # 📦 NPM Configuration
 ├── 📄 index.html                   # 📄 HTML Template
+├── 📄 LICENSE                      # 📜 MIT License
+├── 📄 package-lock.json            # 🔒 Dependency Lock File
 ├── 📄 package.json                 # 📦 Dependencies
 ├── 📄 postcss.config.js            # 🎨 PostCSS Configuration
 ├── 📄 README.md                    # 📖 Documentation
